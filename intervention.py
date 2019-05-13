@@ -50,8 +50,7 @@ def all_of_it(sim, frac, TT):
     print('sim=' + str(sim))
     print('frac=' + str(frac))
     print('TT=' + str(TT))
-    _, _, S, X, A, neigh = load.get_data(sim, frac)
-    _, _, _, _, A_oh, _  = load.get_data(sim, 0)
+    _, _, S, X, A, A_oh, neigh = load.get_data(sim, 0)
     n = S.shape[0]
     da = A.shape[-1]
     if frac:
@@ -249,4 +248,4 @@ def all_of_it(sim, frac, TT):
 
 
 if __name__ == '__main__':
-    all_of_it(5, 1, 5)
+    all_of_it(5, 1, 1)

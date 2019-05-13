@@ -64,7 +64,7 @@ def all_of_it(sim, frac):
     # get data
     print('sim: ' + str(sim))
     print('frac: ' + str(frac))
-    X, y, _, _, _, _, _ = load.get_data(sim, frac)
+    X, y, _, _, _, _, _ = load.get_data(sim, 0)
     (n,d) = X.shape
     X_t = Variable(torch.FloatTensor(X))
     y_t = Variable(torch.FloatTensor(y))
